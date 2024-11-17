@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image with Circular Mask</title>
+  <style>
+ .main-image-container {
+    position: relative; /* Set the container to relative position */
+}
+
+.main-image {
+    display: block; /* Ensure it's treated as a block element */
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.circle-image {
+    position: absolute; /* Position absolutely within the container */
+    width: 20%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    bottom: 0; /* Align the bottom of the circle image with the bottom of the main image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%) translateY(50%); /* Adjust positioning */
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+
+  </style>
+
+    <div class="main-image-container">
+        <img src="../images/HeroBg.jpg" alt="Main Image" class="main-image">
+        <img src="../images/Wx124.png" alt="Circle Image" class="circle-image">
+    </div>
+    <p> figma</p>
+    
+</body>
+</html>

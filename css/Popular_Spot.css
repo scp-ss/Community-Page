@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+}
+.Popular_Spot_Main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    gap: 20px; /* Space between "one" and "two" divs */
+
+}
+
+.FirstContainer, .SecondContainer {
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    margin: 10px;
+}
+
+.Second_Image_Container, .First_Image_Container {
+    width: 75%;
+    margin: 1px 3px;
+}
+.Second_Text_Container, .First_Text_Container {
+    width: 25%;
+    margin: 1px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    padding: 10px;
+    background: rgb(61, 121, 60);
+    border-radius: 15px;
+}
+
+.Second_Text_Container:hover, .First_Text_Container:hover {
+    width: 25%;
+    margin: 2px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    padding: 10px;
+    background: rgb(56, 104, 55);
+    border-radius: 25px;
+    transition: 1s;    
+}
+
+.div1-image, .div2-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Additional styling */
+p {
+    margin: 0;
+    text-align: center; /* Center text horizontally */
+}
+
+.Startting_text_Popular_Spot {
+    margin: 40vh 1px 1px 1px;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    display: flex;
+}
+
+.Main_Title_Popular_Spot {
+    font-size: 80px;
+    font-weight: 550;
+    color: rgb(58, 106, 58);
+    margin: 0;
+    text-align: center; /* Center text horizontally */
+    font-family: 'Times New Roman', Times, serif;
+/*
+    background-image: linear-gradient(to right, #153909, #000000d1); /* Define the gradient colors */ 
+/*  -webkit-background-clip: text; /* Use the background as the text fill */ 
+  /*  color: transparent;
+    */
+}
+
+.Main_Title_Popular_Spot:hover {
+    font-size: 85px;
+    font-weight: 860;
+    color: rgb(53, 111, 52);
+    transition: 0.5s;
+}

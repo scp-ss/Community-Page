@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background: url('hero-background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: auto;/*calc(100vh - 20px); */
+    margin: 10px;
+    padding-top: 60px; /*Add padlings To prevents it from lapping over the navBar*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-content {
+   /* background-color: rgba(93, 93, 93, 0.111);  */
+    padding: 20px; 
+    height: 170px;
+    border-radius: 10px;
+    color: rgb(77, 76, 74);
+    display: flex;
+    width: 100%;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.hero-title {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-description {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.hero-content:hover {
+    transform: scale(1.03);
+    background: #58786288;
+    transition: 2s;
+}
+
+/*
+.hero_Image_container {
+    text-align: center;
+}
+
+.hero_image {
+    display: inline-block;
+    width: calc(100% * .5);
+}
+ Does not WORK*/
+
+ .main-image-container {
+    position: relative; /* Set the container to relative position */
+}
+
+.main-image {
+    display: block; /* Ensure it's treated as a block element */
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.circle-image {
+    position: absolute; /* Position absolutely within the container */
+    width: 15%; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    bottom: 0; /* Align the bottom of the circle image with the bottom of the main image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%) translateY(50%); /* Adjust positioning */
+    /*border-radius: 50%; */
+    border: 20px solid #e0db95;
+}

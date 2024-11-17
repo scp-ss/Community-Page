@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+.Popular_Spot_Main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    gap: 20px; /* Space between "one" and "two" divs */
+
+}
+
+.FirstContainer, .SecondContainer {
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    margin: 10px;
+}
+
+.Second_Image_Container, .First_Image_Container {
+    width: 75%;
+    margin: 5px 3px;
+    border-radius: 15px;
+}
+
+.Second_Text_Container, .First_Text_Container {
+    width: 25%;
+    margin: 5px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    padding: 10px;
+    background: rgb(47, 126, 45);
+    
+}
+
+.div1-image, .div2-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Additional styling */
+p {
+    margin: 0;
+    text-align: center; /* Center text horizontally */
+}
