@@ -1,0 +1,75 @@
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background: #e0db95;
+
+}
+.NavBar {
+    list-style: none;
+    background: #587862;
+}
+
+.Container_DropDown {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 160px;
+}
+
+.Burger {
+    display: block; 
+    padding:20px 25px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.DropDown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #587862;
+    z-index: 999;
+}
+
+.Container_DropDown:hover > .DropDown {
+    display: block;
+}
+
+.ItemsDropDown {
+    padding: 5px;
+    margin-bottom: 1px;
+    background-color: transparent;
+    border: 1px solid;
+    border-image: linear-gradient(to right, rgb(212, 212, 212), rgb(123, 123, 123));
+    border-image-slice: 1;
+}
+
+
+.ItemsDropDown a {
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease;  
+}
+
+.ItemsDropDown a:hover {
+    color: rgb(246, 248, 248); 
+    box-shadow: 0 0 8px 2px rgba(247, 247, 247, 0.922); 
+}
+
+.hero_Image_Container {
+    width: 100vw; /* Full viewport width */
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.hero-image {
+    width: 100vw; /* Full viewport width */
+    height: auto; /* Adjust height automatically */
+    display: block; /* Remove any default spacing below the image */
+}
